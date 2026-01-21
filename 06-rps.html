@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>rock paper scissors</p>
+
+  <button onclick="
+    let randomrps1 = Math.random()
+    if (randomrps1 < 0.33) {
+      alert('paper\nyou have lost!');
+    } else if (randomrps1 < 0.66) {
+      alert('scissors\nyou have won');
+    } else {
+      alert('it is a tie!');
+    }
+  ">
+    Rock
+  </button>
+  <button onclick="
+  let randomrps2 = Math.random()
+  if (randomrps2 < 0.33) {
+    alert('paper\nit is a tie!');
+  } else if (randomrps2 < 0.66) {
+    alert('scissors\nyou have lost!');
+  } else {
+    alert('rock\nyou have won');
+  }
+  ">
+    paper
+  </button>
+  <button onclick="
+  let randomrps = Math.random()
+  if (randomrps < 0.33) {
+    alert('paper\nyou have won!');
+  } else if (randomrps < 0.66) {
+    alert('scissors\nits a tie!');
+  } else {
+    alert('rock\nyou have lost');
+  }
+  ">
+    scissors
+  </button>
+  <script>
+    
+  </script>
+</body>
+</html>
