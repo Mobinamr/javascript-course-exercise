@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+<body>
+  <script>
+    
+    const product = {
+      name: 'socks',
+      price: 1090
+    };
+
+    cnosole.log(product);
+    console.log(product.name);
+    console.log(product.price);
+
+    product.name = 'cotton socks';
+    console.log(product);
+
+    product.newProperty = true;
+    console.log(product);
+
+
+    delete product.newProperty;  
+    
+
+    const product2 = {
+      name: 'shirt',
+
+    };
+    console.log(product2);
+
+    JSON.stringify(product2);
+  </script>
+</body>
+</html>
