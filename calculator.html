@@ -4,93 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>calculator</title>
-  <style>
-    .sections {
-      display: block;
-      margin-bottom: 15px;
-
-    }
-  </style>
+  <link rel="stylesheet" href="styles/calc.css">
 </head>
 <body>
   <p>Calculator</p>
 
   <div class="sections">
     <button class="js-number" onclick="
-      buttonClick(this);
+    buttonNumberClick(this);
     ">1</button>
     <button class="js-number" onclick="
-    buttonClick(this);
+    buttonNumberClick(this);
   ">2</button>
     <button class="js-number" onclick="
-    buttonClick(this);
+    buttonNumberClick(this);
   ">3</button>
-    <button>+</button>
+    <button onclick="
+    buttonTekenClick(this);
+    "> + </button>
   </div>
 
   <div class="sections">
     <button class="js-number" onclick="
-    buttonClick(this);
+    buttonNumberClick(this);
   ">4</button>
     <button class="js-number" onclick="
-    buttonClick(this);
+    buttonNumberClick(this);
   ">5</button>
     <button class="js-six" onclick="
-    buttonClick(this);
+    buttonNumberClick(this);
   ">6</button>
-    <button>-</button>
+    <button onclick="
+    buttonTekenClick(this);
+    "> - </button>
   </div>
   
   <div class="sections">
     <button class="js-number" onclick="
-      buttonClick(this);
+    buttonNumberClick(this);
     ">7</button>
     <button class="js-number" onclick="
-    buttonClick(this);
+    buttonNumberClick(this);
   ">8</button>
     <button class="js-number" onclick="
-    buttonClick(this);
+    buttonNumberClick(this);
   ">9</button>
-    <button>*</button>
+    <button onclick="
+    buttonTekenClick(this);
+    "> * </button>
   </div>
 
   <div class="sections">
     <button class="js-number" onclick="
-    buttonClick(this);
+    buttonNumberClick(this);
   ">0</button>
-    <button>.</button>
-    <button>=</button>
-    <button>/</button>
+    <button onclick="
+    buttonTekenClick(this);
+    ">.</button>
+    <button onclick="
+    equals();
+    ">=</button>
+    <button onclick="
+    buttonTekenClick(this);
+    "> / </button>
   </div>
 
   <div class="sections">
     <button onclick="
-      resulta ='';
+      result ='';
       console.log('Cleared.');
     ">Clear</button>
   </div>
 
-    <script>
-
-      let resulta = '';
-
-      let teken = '';
-
-      function buttonNumberClick(num) {
-        let value = num.textContent;
-        resulta += value;
-        console.log(resulta);
-
-      }
-
-      function buttonTekenClick(tek) {
-        
-      }
-
-
-
-      
-
+    <script src="scripts/calc.js">
     </script>
 </body>
 </html>
