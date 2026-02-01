@@ -1,26 +1,27 @@
 let result = '';
+let display = document.getElementById('display');
 
       
 
       function buttonNumberClick(num) {
         let value = num.textContent;
         result += value;
-        console.log(result);
+        display.textContent = result;
 
       }
 
       function buttonTekenClick(tek) {
         let teken = tek.textContent;
         result += teken;
-        console.log(result);
+        display.textContent = result;
       }
 
       function equals() {
-        equal = eval(result);
-        console.log(equal);
-        result = equal;
+        result = String(eval(result));
+        display.textContent = result;
       }
 
+      
 
 
       

@@ -5,9 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>calculator</title>
   <link rel="stylesheet" href="styles/calc.css">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    .screen {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
   <p>Calculator</p>
+
+  <div class="screen" id="display">
+    0
+  </div>
 
   <div class="sections">
     <button class="js-number" onclick="
@@ -72,7 +86,7 @@
   <div class="sections">
     <button onclick="
       result ='';
-      console.log('Cleared.');
+      display.textContent = '0';
     ">Clear</button>
   </div>
 
