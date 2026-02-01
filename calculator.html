@@ -5,19 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>calculator</title>
   <link rel="stylesheet" href="styles/calc.css">
-  <style>
-    body {
-      background-color: black;
-      color: white;
-    }
-
-    .screen {
-      margin-bottom: 10px;
-    }
-  </style>
 </head>
 <body>
-  <p>Calculator</p>
 
   <div class="screen" id="display">
     0
@@ -33,7 +22,7 @@
     <button class="js-number" onclick="
     buttonNumberClick(this);
   ">3</button>
-    <button onclick="
+    <button class="teken-button" onclick="
     buttonTekenClick(this);
     "> + </button>
   </div>
@@ -45,10 +34,10 @@
     <button class="js-number" onclick="
     buttonNumberClick(this);
   ">5</button>
-    <button class="js-six" onclick="
+    <button class="js-number" onclick="
     buttonNumberClick(this);
   ">6</button>
-    <button onclick="
+    <button class="teken-button" onclick="
     buttonTekenClick(this);
     "> - </button>
   </div>
@@ -63,7 +52,7 @@
     <button class="js-number" onclick="
     buttonNumberClick(this);
   ">9</button>
-    <button onclick="
+    <button class="teken-button" onclick="
     buttonTekenClick(this);
     "> * </button>
   </div>
@@ -72,19 +61,19 @@
     <button class="js-number" onclick="
     buttonNumberClick(this);
   ">0</button>
-    <button onclick="
+    <button class="js-number" onclick="
     buttonTekenClick(this);
-    ">.</button>
-    <button onclick="
+    "> . </button>
+    <button class="js-number" onclick="
     equals();
     ">=</button>
-    <button onclick="
+    <button class="teken-button" onclick="
     buttonTekenClick(this);
     "> / </button>
   </div>
 
   <div class="sections">
-    <button onclick="
+    <button class="clear-button" onclick="
       result ='';
       display.textContent = '0';
     ">Clear</button>

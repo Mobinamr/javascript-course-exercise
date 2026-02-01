@@ -1,5 +1,49 @@
 .sections {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-size: 45px;
+  font-family: arial;
+  
+}
+
+.screen {
+  margin-bottom: 10px;
+}
+
+.js-number {
+  border: none;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px; /* always half of height or width */
+
+  
+}
+
+.clear-button {
+  border: none;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.teken-button {
+  border: none;
+  background-color: rgb(254, 160, 10);
+  color: white;
+  font-size: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
 }
